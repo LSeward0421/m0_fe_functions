@@ -8,19 +8,13 @@
 
 
 // EX 1:
-function askName(friendly) {
-  console.log(`Hello ${friendly}, what is your name?`);
+function askName() {
+  console.log("Hello, what is your name?");
 }
 
-nameQuestion("Partner");
-nameQuestion("new friend");
-nameQuestion("cool person you");
-
 // First, I adjusted the function name to be more precise and utilizes the present imperative.
-// I then adjusted the parameters to friendly and used interpolation in the console log statement 
-  // to make call function more dynamic.
 // I added a semicolon to the end of the console log statement for correct syntax. 
-// I called the function 3 times, each with a different argument. 
+
 
 
 // EX 2:
