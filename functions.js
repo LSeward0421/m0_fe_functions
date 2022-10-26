@@ -37,13 +37,11 @@ checkStock(1, "Salsa");
 // => "Salsa - running LOW"
 
 function checkStock(quantity, item) {
-    if (quantity >= 4 && item === "Coffee") {
+    if (quantity < 3) {
       console.log(`${item} is stocked`);
-    } else if (quantity <=3 && item === "Tortillas") {
+    } else if (quantity > 0) {
       console.log(`${item} - running LOW`);
-    } else if (quantity <= 0 && item === "Cheese") {
-      console.log(`${item} - OUT of stock!`); 
-    } else if (quantity <= 1 && item === "Salsa") {
-      console.log(`${item} - running LOW`);
+    } else {
+      console.log(`${item} is OUT of stock`)
     }
   }
